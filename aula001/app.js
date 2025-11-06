@@ -49,33 +49,106 @@ console.log(typeof fumante)
 //     Operador Atribuição
 /* Os operadores de atribuição em JavaScript são usados para atribuir valores a variáveis, sendo o = o operador básico. Operadores combinados, como +=, *= e /=, permitem realizar uma operação e a atribuição do resultado à mesma variável em uma única etapa, simplificando o código. 
 */
+salario = 2500
 
 //     Operadores aritméticos
 /* Os operadores aritméticos em JavaScript permitem a manipulação de valores numéricos. Além dos operadores convencionais de adição, subtração, multiplicação e divisão, temos o operador de módulo (`%`) para obter o resto da divisão e o operador de exponenciação (`**`) para calcular potências.
 */
+let n1 = 10, n2 = 5
+console.log(n1 + n2) //soma
+console.log(n1 - n2) //subtração
+console.log(n1 * n2) //multiplicação
+console.log(n1 / n2) //divisão
+console.log(10%3) //módulo
 
 //     Operadores relacionais
 /* Os operadores relacionais em JavaScript comparam dois valores e retornam um resultado booleano (true ou false). Os principais operadores são > (maior que), < (menor que), >= (maior ou igual a), <= (menor ou igual a), além dos operadores de igualdade e desigualdade (==, ===, !=, !==), in (verificar propriedade) e instanceof (verificar instância de objeto). 
 */
+console.log(n1 == n2)
+console.log(n1 != n2)
+console.log(n1 > n2)
+console.log(n1 < n2)
+console.log(n1 >= n2)
+console.log(n1 <= n2)
+console.log(n1 != n2)
 
 //     Operadores lógicos
-/* Os operadores lógicos são elementos fundamentais da linguagem de programação JavaScript. Eles permitem realizar operações de comparação e combinação de valores booleanos, ou seja, valores que podem ser verdadeiros (true) ou falsos (false).
+/* Os operadores lógicos são elementos fundamentais da linguagem de programação JavaScript. Eles permitem realizar operações de comparação e combinação de valores booleanos, ou seja, valores que podem ser verdadeiros (true) ou falsos (false). ! não / not || - ou / OR && - e / AND
 */
+
+let altura = 1.80
+let peso = 80
+let tipo = "criança"
+
+//muda o resultado final, se for verdadeiro vira falso e se for falso vira verdadeiro
+console.log(!10>5)
+
+//com o || apenas uma verificação precisa ser verdadeira.
+console.log(altura > 1.5 || peso < 150 || tipo != "criança")
+
+// com && todas as informações devem ser verdadeiras para o resultado final ser verdadeiro.
+console.log(altura >1.5 && peso < 150 && tipo != "criança")
 
 // Estrutura
 //     Estrutura de controle/decisão
+let carro = "fiat"
+
+if (carro == "bmw"){
+    console.log("Você está bem mais ou menos")
+}else{
+    console.log("A vida tá progredindo")
+}
+
+let idadealuno = 20
+if(idadealuno >= 18){
+    console.log("maior de idade")
+}else{
+    console.log("menor de idade")
+}
 /* As estruturas de controle de decisão em JavaScript são comandos que gerenciam o fluxo do código com base em condições, usando principalmente if/else e switch. A estrutura if executa um bloco de código se uma condição for verdadeira, enquanto if/else executa um bloco de código para true e outro para false. O switch é uma alternativa mais limpa para comparar um valor com múltiplos casos possíveis. 
 */
 
 //     Laços de repetição
 /* Em JavaScript, laços de repetição são usados para executar um bloco de código várias vezes, com os tipos principais sendo for, while e do...while. O for é ideal para um número predefinido de iterações, enquanto o while e o do...while são mais adequados quando o número de repetições depende de uma condição. Outros métodos úteis incluem for...of para iteráveis como arrays e o método forEach() para arrays. 
 */
+let controle = 1
+while(controle <=10){
+    console.log(controle)
+    controle = controle + 1
+}
 
+controle = 1
+while(controle <= 10){
+    console.log(7* controle)
+    controle = controle +1
+}
 // Arrays --> vetor
 /* Arrays (ou vetores) em JavaScript são estruturas de dados que armazenam uma coleção de valores em uma única variável, acessíveis por um índice numérico a partir do zero. Eles são objetos com métodos e propriedades para manipular os dados, como push para adicionar elementos e length para obter o número de itens. Arrays permitem agrupar múltiplos itens relacionados, como uma lista de nomes de alunos, de forma organizada e eficiente. 
 */
+let zoologico = ['leão', 'elefante', 'zebra', 'ariranha', 'lobo guará', 'arara']
+console.log(zoologico [2])
+console.log(zoologico.length)
+let frutas = ['🍓','🍊','🍍','🍐','🍌','🍇','🍉']
+console.log(frutas)
+frutas.push('🍎')
+console.log(frutas)
 
+let alunos = []
+alunos.push("João")
+alunos.push("Renata")
+alunos.push("Roberto")
+console.log(alunos)
 // Funções personalizadas
 /* Funções personalizadas em JavaScript são blocos de código reutilizáveis que você cria para realizar tarefas específicas, que podem incluir cálculos, manipulação de dados ou a adição de novas funcionalidades a outros aplicativos como o Excel ou Google Sheets. Para criar uma função, usa-se a palavra-chave function, seguida de um nome, parênteses () e chaves {} para o corpo do código.
 */
+function mensagem(){
+    console.log("Olá")
+    console.log("Seja bem vindo")
+    console.log(" :) ")
+}
+mensagem()
+function conta(horas, sal_hora){
+    console.log(horas * sal_hora)
+}
+conta(140, 75)
  
